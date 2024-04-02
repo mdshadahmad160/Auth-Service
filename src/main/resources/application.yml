@@ -1,0 +1,17 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: ET-USER-AUTH-SERVICE
+  datasource:
+    url: jdbc:mysql://localhost:3306/ET-USER-AUTH-SERVICE
+    username: root
+    password: root
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+        show_sql: true
+    hibernate:
+      ddl-auto: update

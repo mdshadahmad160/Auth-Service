@@ -1,0 +1,21 @@
+package com.expensePro.api.EtUserAuthService.exception;
+
+import lombok.Getter;
+
+
+/**
+ * @author Shad Ahmad
+ * @since 30-03-2024
+ */
+
+
+@Getter
+public class UserAlreadyExistsException extends RuntimeException{
+
+    private String errorCode;
+
+    public UserAlreadyExistsException(String message, String errorCode) {
+        super(message);
+        this.errorCode = errorCode;
+    }
+}
